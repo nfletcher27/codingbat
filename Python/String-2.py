@@ -26,3 +26,11 @@ def end_other(a, b):
     return True
   else:
     return b.lower().endswith(a.lower())
+
+def double_char(str):
+  newString = ""
+  for letter in str:
+    newString += letter
+    newString += letter
+    
+  return newString
