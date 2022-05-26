@@ -1,5 +1,6 @@
 // AP-1 questions
 
+//
 public boolean scoresIncreasing(int[] scores) {
   
   for(int i = 0; i < scores.length-1; i++) {
@@ -8,6 +9,7 @@ public boolean scoresIncreasing(int[] scores) {
   return true;
 }
 
+//
 public List wordsWithoutList(String[] words, int len) {
   ArrayList<String> without = new ArrayList<String>();
   for(int i = 0; i < words.length; i++) {
@@ -16,6 +18,7 @@ public List wordsWithoutList(String[] words, int len) {
   return without;
 }
 
+//
 public int sumHeights(int[] heights, int start, int end) {
   int counter = 0;
   for(int i = start; i < end; i++) {
@@ -24,6 +27,7 @@ public int sumHeights(int[] heights, int start, int end) {
   return counter;
 }
 
+//
 public boolean scores100(int[] scores) {
   for(int i = 0; i < scores.length-1; i++) {
     if(scores[i] == 100 && scores[i] == scores[i+1]) return true;
@@ -31,6 +35,7 @@ public boolean scores100(int[] scores) {
   return false;
 }
 
+//
 public int wordsCount(String[] words, int len) {
   int counter = 0;
   for(int i = 0; i < words.length; i++) {
@@ -39,6 +44,7 @@ public int wordsCount(String[] words, int len) {
   return counter;
 }
 
+//
 public String[] wordsWithout(String[] words, String target) {
   int counter = 0;
   for(int i = 0; i < words.length; i++) {
@@ -52,6 +58,7 @@ public String[] wordsWithout(String[] words, String target) {
   return without.toArray(new String[words.length-counter]);
 }
 
+//
 public boolean scoresClump(int[] scores) {
   
   for(int i = 0; i < scores.length-2; i++) {
@@ -63,6 +70,7 @@ public boolean scoresClump(int[] scores) {
   return false;
 }
 
+//
 public int matchUp(String[] a, String[] b) {
   int count = 0;
   for(int i = 0; i < a.length; i++) {
@@ -71,6 +79,7 @@ public int matchUp(String[] a, String[] b) {
   return count;
 }
 
+//
 public int scoresSpecial(int[] a, int[] b) {
   return findBiggest(a) + findBiggest(b);
 }
