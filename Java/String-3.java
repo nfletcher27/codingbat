@@ -28,3 +28,14 @@ public int maxBlock(String str) {
   }
   return maxTotal;
 }
+
+public int sumDigits(String str) {
+  int total = 0;
+  for(int i = 0; i < str.length(); i++) {
+    if(Character.isDigit(str.charAt(i))) {
+      String chars = Character.toString(str.charAt(i));
+      total += Integer.parseInt(chars);
+    }
+  }
+  return total;
+}
