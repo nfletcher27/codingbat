@@ -34,3 +34,11 @@ def double_char(str):
     newString += letter
     
   return newString
+
+def count_code(str):
+  cCount = 0
+  for i in range(len(str)):
+    if str[i:i+2] == 'co' and str[i+3:i+4] == 'e':
+      cCount += 1
+    
+  return cCount
