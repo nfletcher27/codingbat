@@ -46,3 +46,21 @@ def lucky_sum(a, b, c):
   if c == 13:
     return a + b
   return a + b + c
+
+def round_sum(a, b, c):
+  return round10(a) + round10(b) + round10(c)
+def round10(num):
+  if num > 10:
+    if num % 10 >= 5:
+      st = str(num)
+      st = st[0] + '0'
+      return int(st) + 10
+    else:
+      st = str(num)
+      st = st[0] + '0'
+      return int(st)
+  else:
+    if num >= 5:
+      return 10
+    else:
+      return 0
