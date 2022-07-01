@@ -26,3 +26,9 @@ public int triangle(int rows) {
   if(rows <= 1) return rows;
   return rows + triangle(rows-1);
 }
+
+public int powerN(int base, int n) {
+  if(n == 1) return base;
+  if(n == 2) return base * base;
+  return powerN(base, n-1) * base;
+}
