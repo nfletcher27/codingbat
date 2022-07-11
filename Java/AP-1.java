@@ -106,3 +106,12 @@ public int userCompare(String aName, int aId, String bName, int bId) {
     return -1;
   }
 }
+
+public boolean hasOne(int n) {
+  String str = Integer.toString(n);
+  for(int i = 0; i < str.length(); i++) {
+    char chr = str.charAt(i);
+    if(chr == '1') return true;
+  }
+  return false;
+}
