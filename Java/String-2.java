@@ -25,3 +25,25 @@ public String zipZap(String str) {
   
   return str2;
 }
+
+public String starOut(String str) {
+  
+  if(str.length() == 0) return "";
+  String s = "";
+  
+  for(int i = 0; i < str.length(); i++) {
+    if(str.charAt(i) == '*') {
+      i++;
+      continue;
+    } else if(i < str.length()-1 && str.charAt(i+1) == '*') {
+      i += 2;
+      continue;
+    } else if(i > 0 && str.charAt(i-1) == '*') {
+      continue;
+    } else {
+      s += str.charAt(i);
+    }
+  }
+    
+  return s;
+}
