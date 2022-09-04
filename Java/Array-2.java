@@ -1,3 +1,21 @@
+public int[] evenOdd(int[] nums) {
+  
+  ArrayList<Integer> odds = new ArrayList<Integer>();
+  ArrayList<Integer> evens = new ArrayList<Integer>();
+  for(int i = 0; i < nums.length; i++) {
+    if(nums[i] % 2 == 0) {
+      evens.add(nums[i]);
+    } else {
+      odds.add(nums[i]);
+    }
+  }
+  
+  evens.addAll(odds);
+  int[] arr = evens.stream().mapToInt(i -> i).toArray();
+  return arr;
+}
+
+
 public String[] fizzBuzz(int start, int end) {
   String[] str = new String[end - start];
   int counter = 0;
